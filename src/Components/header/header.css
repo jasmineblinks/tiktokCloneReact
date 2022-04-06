@@ -1,0 +1,13 @@
+.App-logos {
+  width: 100px;
+  height: auto;
+  pointer-events: none;
+  object-fit: contain;
+}
+.upload {
+  color: #333 !important;
+  font-weight: bold;
+}
+.navContainer {
+  justify-content: space-around !important;
+}
