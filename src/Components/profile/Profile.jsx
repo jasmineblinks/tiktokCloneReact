@@ -1,9 +1,12 @@
 import React from "react";
+import ProfileHeader from "../profileheader/ProfileHeader";
+import SideBar from "../sideNav/SideBar";
 
 const Profile = () => {
   return (
-    <div style={{ backgroundColor: "green", color: "#fff" }}>
-      <p style={{ color: "#fff", marginLeft: "100px" }}>Profile</p>
+    <div>
+      <ProfileHeader />
+      <SideBar />
     </div>
   );
 };
