@@ -1,9 +1,52 @@
-.base {
+/* .base {
   background-color: blueviolet;
-}
-.title {
+} */
+/* .title {
   text-align: center;
 }
 .title h3 {
   font-weight: bold;
+} */
+.container {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  /* background-color: blue; */
+}
+.container h3 {
+  font-weight: bold;
+}
+.btn-social {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding: 5px 5px;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn__icon {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 40px;
+  border-right: 1px solid lightgrey;
+}
+footer {
+  top: 0px;
+  bottom: 50px;
+}
+footer a {
+  color: #fe2c55;
 }
