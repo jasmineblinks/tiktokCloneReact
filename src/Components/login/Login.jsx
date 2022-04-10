@@ -68,7 +68,7 @@ const Login = () => {
             <span className="btn__icon">
               <img src={user} alt="logo" />
             </span>
-            Use phone/email/username
+            <span className="btn__text"> Use phone/email/username</span>
           </button>
           <button className="btn-social">
             <span className="btn__icon">
