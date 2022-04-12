@@ -1,9 +1,15 @@
-main {
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} */
+/* .header-banner {
   background-color: #f5f5f5;
-  width: 100%;
-  /* overflow: hidden; */
-}
-.container {
+  
+  position: relative;
+} */
+/* .container {
   margin-top: 20px;
   border-radius: 5px;
   background-color: #fff;
@@ -25,9 +31,9 @@ main {
   border: 2px dashed lightgrey;
   border-radius: 5px;
   color: #000;
-  z-index: 20;
+  
   transition: all 0.3s ease-out;
-}
+} */
 /* .dropz {
   display: flex;
   justify-content: center;
@@ -35,10 +41,10 @@ main {
   flex-direction: column;
   margin: auto;
 } */
-.selectFile {
+/* .selectFile {
   height: 300px;
   margin: 20px auto;
-  /* position: relative; */
+  
   width: 200px;
 }
 
@@ -78,7 +84,7 @@ footer {
 
   flex-direction: column;
 }
-.checked:checked::before {
+.checked:checked::after {
   background-color: #fe2c55;
 }
 
@@ -86,3 +92,7 @@ footer {
   text-align: left;
   font-weight: bold;
 }
+.checked-input {
+  display: flex;
+  align-items: center;
+} */
