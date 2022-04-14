@@ -16,6 +16,7 @@ body {
 }
 .banner-content-wrapper {
   display: flex;
+  justify-content: space-around;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -23,31 +24,35 @@ body {
   background-color: #fff;
 }
 .first-wrapper {
-  /* max-width: 40%; */
   flex: 1;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 40%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 .second-wrapper {
-  width: 60%;
-  border-radius: 10px;
+  /* width: 40%; */
+  /* border-radius: 10px; */
+  margin: 150px auto auto auto;
   height: 40vw;
-  width: 40vw;
-  max-width: 500px;
+  width: 100%;
+
+  max-width: 50%;
   max-height: 500px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-content {
+  width: 300px !important;
 }
 .zone {
   display: flex;
   background: #fff;
-  width: 40%;
+  width: 300px;
   padding: 10px 10px;
   border: 2px dashed lightgrey;
   border-radius: 5px;
@@ -59,7 +64,7 @@ body {
   transition: all 0.3s ease-out;
 }
 .first-wrapper__content {
-  margin: 50px 0 50px 50px;
+  margin: 50px 0 50px 85px;
 }
 .inner__content {
   justify-content: center;
@@ -81,7 +86,6 @@ body {
 .input-text {
   cursor: pointer;
   display: block;
-
   left: 0;
   top: 0;
   width: 100%;
@@ -102,4 +106,18 @@ body {
 }
 .selectFile .input-text[type="file"] {
   opacity: 0;
+}
+
+.checked:checked::after {
+  background-color: #fe2c55;
+}
+
+.second-wrapper label {
+  text-align: left;
+  font-weight: bold;
+}
+.checked-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

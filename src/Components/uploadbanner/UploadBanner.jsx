@@ -47,7 +47,7 @@ function UploadBanner() {
 
           <label htmlFor="">Who can view this video</label>
 
-          <Form.Select size="sm">
+          <Form.Select className="form-content" size="sm">
             <option>Public</option>
             <option>Friends</option>
             <option>Private</option>
@@ -63,6 +63,7 @@ function UploadBanner() {
                 checked="checked"
               />
               <label for="vehicle1"> Comment</label>
+
               <input
                 type="checkbox"
                 id="duet"
@@ -71,6 +72,7 @@ function UploadBanner() {
                 checked="checked"
               />
               <label for="vehicle2"> Duet</label>
+
               <input
                 type="checkbox"
                 id="stitch"
@@ -79,8 +81,6 @@ function UploadBanner() {
                 checked="checked"
               />
               <label for="vehicle3"> Stitch</label>
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
             </form>
           </div>
           <div style={{ display: "flex" }}>

@@ -2,15 +2,7 @@ import React from "react";
 import tiktoklogo from "../../images/tiktoklogo.png";
 import dots from "../../images/menu-dots.svg";
 import "./header.css";
-import {
-  Navbar,
-  Container,
-  Nav,
-  Dropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 
 const Header = () => {
   return (
