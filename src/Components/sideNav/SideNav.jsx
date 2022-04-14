@@ -22,7 +22,7 @@ const StyledSideNav = styled.div`
   background-color: #fff;
   overflow-x: hidden;
   padding-top: 10px;
-  top: 62px;
+  top: 79px;
   border-right: 1px solid lightgray;
 `;
 

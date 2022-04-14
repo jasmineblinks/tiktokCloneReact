@@ -1,13 +1,14 @@
 import React from "react";
 import tiktoklogo from "../../images/tiktoklogo.png";
 import dots from "../../images/menu-dots.svg";
+import search from "../../images/search.svg";
 import "./header.css";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar
+    <div className="nav-banner">
+      {/* <Navbar
         variant="light"
         expand="lg"
         className="navContainer"
@@ -45,27 +46,35 @@ const Header = () => {
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-end">
-            <Nav>
-             
-              <Nav.Link href="superadmin" style={{ color: "#fff!important" }}>
-                Super Admin
-              </Nav.Link>
-            </Nav>
-
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-light">Search</Button>
-            </Form>
-          </Navbar.Collapse> */}
         </Container>
-      </Navbar>
+      </Navbar> */}
+      <nav className="navbar">
+        <img src={tiktoklogo} className="App-logos" alt="logo" />
+        <form action="/action_page.php" className="form__banner">
+          <input
+            className="search__input"
+            type="text"
+            placeholder="Search accounts and videos"
+            name="search"
+          />
+          <button className="search__submit" type="submit">
+            <img src={search} alt="logo" />
+          </button>
+        </form>
+        <ul className="nav-links">
+          <li>
+            <a href="https"> Upload</a>
+          </li>
+          <li className="btn">
+            <a href="https">Log in</a>
+          </li>
+          <li>
+            <a href="https">
+              <img src={dots} alt="logo" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
