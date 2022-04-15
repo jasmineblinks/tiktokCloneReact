@@ -1,15 +1,15 @@
 import React from "react";
 import tiktoklogo from "../../images/tiktoklogo.png";
-import profile from "../../images/faith-p.jpg";
+import profile from "../../images/profile.jpg";
 import letter from "../../images/letter.svg";
+import search from "../../images/search.svg";
 import message from "../../images/message.svg";
 import upload from "../../images/upload.svg";
-import { Navbar, Container, Nav, Form, FormControl } from "react-bootstrap";
-
+import "./profileheader.css";
 const ProfileHeader = () => {
   return (
-    <div>
-      <Navbar
+    <div className="nav-banner">
+      {/* <Navbar
         variant="light"
         expand="lg"
         className="navContainer container-fluid"
@@ -48,36 +48,42 @@ const ProfileHeader = () => {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-
-          {/* <Nav.Link href="#home">
+        </Container>
+      </Navbar> */}
+      <nav className="navbar">
+        <img src={tiktoklogo} className="App-logos" alt="logo" />
+        <form action="/action_page.php" className="form__banner">
+          <input
+            className="search__input"
+            type="text"
+            placeholder="Search accounts and videos"
+            name="search"
+          />
+          <button className="search__submit" type="submit">
+            <img src={search} alt="logo" />
+          </button>
+        </form>
+        <ul className="nav-links">
+          <li className="upload">
+            {" "}
+            <img src={upload} alt="logo" />
+          </li>
+          <li>
+            {" "}
+            <img src={message} alt="logo" />
+          </li>
+          <li>
+            <img src={letter} alt="logo" />
+          </li>
+          <li>
             <img
               src={profile}
               alt="logo"
               style={{ width: "35px", height: "35px", borderRadius: "50%" }}
             />
-          </Nav.Link> */}
-
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-end">
-            <Nav>
-             
-              <Nav.Link href="superadmin" style={{ color: "#fff!important" }}>
-                Super Admin
-              </Nav.Link>
-            </Nav>
-
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-light">Search</Button>
-            </Form>
-          </Navbar.Collapse> */}
-        </Container>
-      </Navbar>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };

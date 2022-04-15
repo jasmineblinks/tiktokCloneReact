@@ -7,34 +7,37 @@
   position: fixed;
   width: 100%;
 }
-.nav-links a {
-  text-decoration: none;
+.nav-links {
   color: #000;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   font-weight: bold;
 }
 .navbar {
-  position: absolute;
   top: 0%;
   left: 0%;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* width: 100%; */
+  align-items: center;
   padding: 20px;
   border-bottom: 2px solid lightgray;
 }
-.btn a {
+.nav-links .btn {
   padding: 10px 30px;
   background: #fe2c55;
   border-radius: 8px;
+  border: none;
   color: #ffffff;
+}
+.btn :hover {
+  background: #fe2c55;
+  color: whitesmoke;
 }
 ul {
   list-style: none;
 }
 .nav-links {
   display: flex;
+  justify-content: end;
   align-items: center;
 }
 
@@ -63,7 +66,7 @@ ul {
 }
 .App-logos {
   width: 120px;
-  /* height: auto; */
+
   pointer-events: none;
   object-fit: contain;
 }
@@ -75,32 +78,33 @@ ul {
   justify-content: space-around !important;
 } */
 @media only screen and (max-width: 850px) {
-  .navbar {
+  /* .navbar {
     padding: 0;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: space-around;
+    flex-direction: row;
+  } */
   .App-logos {
     position: absolute;
     top: 30px;
     left: 30px;
-    width: 100px;
+    width: 85px;
   }
   .nav-links {
+    /* margin-left: 10px; */
     flex-direction: row;
-
-    /* width: 100%;
-    height: 100vh; */
-    justify-content: right;
-
-    /* margin-top: -900px; */
-    transition: all 0.5s ease;
+    justify-content: end;
+    align-items: center;
   }
-  .btn a {
-    padding: 10px 10px;
+  .nav-links li {
+    margin: 25px 0 0 62px;
+  }
+  .nav-links .btn {
+    padding: 5px 5px;
     background: #fe2c55;
     border-radius: 8px;
     color: #ffffff;
+    font-size: 3vmin;
   }
   .form__banner {
     display: none;

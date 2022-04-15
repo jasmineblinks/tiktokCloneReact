@@ -4,6 +4,7 @@ import dots from "../../images/menu-dots.svg";
 import search from "../../images/search.svg";
 import "./header.css";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -62,16 +63,10 @@ const Header = () => {
           </button>
         </form>
         <ul className="nav-links">
+          <li>Upload</li>
+          <li className="btn">Log in</li>
           <li>
-            <a href="https"> Upload</a>
-          </li>
-          <li className="btn">
-            <a href="https">Log in</a>
-          </li>
-          <li>
-            <a href="https">
-              <img src={dots} alt="logo" />
-            </a>
+            <img src={dots} alt="logo" />
           </li>
         </ul>
       </nav>

@@ -8,7 +8,7 @@ const Profile = () => {
     <div>
       <ProfileHeader />
       <SideBar />
-      <Layout />
+      {/* <Layout /> */}
     </div>
   );
 };
