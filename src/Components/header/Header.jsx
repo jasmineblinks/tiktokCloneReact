@@ -3,7 +3,7 @@ import tiktoklogo from "../../images/tiktoklogo.png";
 import dots from "../../images/menu-dots.svg";
 import search from "../../images/search.svg";
 import "./header.css";
-import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
+
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -64,7 +64,10 @@ const Header = () => {
         </form>
         <ul className="nav-links">
           <li>Upload</li>
-          <li className="btn">Log in</li>
+
+          <Link to="/profile">
+            <li className="btn">Log in</li>
+          </Link>
           <li>
             <img src={dots} alt="logo" />
           </li>

@@ -6,6 +6,7 @@ import search from "../../images/search.svg";
 import message from "../../images/message.svg";
 import upload from "../../images/upload.svg";
 import "./profileheader.css";
+import { Link } from "react-router-dom";
 const ProfileHeader = () => {
   return (
     <div className="nav-banner">
@@ -64,10 +65,13 @@ const ProfileHeader = () => {
           </button>
         </form>
         <ul className="nav-links">
-          <li className="upload">
-            {" "}
-            <img src={upload} alt="logo" />
-          </li>
+          <Link to="/upload">
+            <li className="upload">
+              {" "}
+              <img src={upload} alt="logo" />
+            </li>
+          </Link>
+
           <li>
             {" "}
             <img src={message} alt="logo" />
