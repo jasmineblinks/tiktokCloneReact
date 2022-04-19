@@ -7,6 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Components/login/Login";
 import Register from "./Components/register/Register";
 import Upload from "./Components/upload/Upload";
+import Minicard from "./pages/minicard/Minicard";
+import Microcard from "./pages/microcard/Microcard";
+import Followers from "./pages/followers/Followers";
+import Card from "./pages/Card/Card";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/upload" element={<Upload />} />
+        <Route exact path="/minicard" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

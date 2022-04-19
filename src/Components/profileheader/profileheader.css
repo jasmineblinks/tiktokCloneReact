@@ -70,20 +70,8 @@ ul {
   pointer-events: none;
   object-fit: contain;
 }
-/* .upload {
-  color: #333 !important;
-  font-weight: bold;
-}
-.navContainer {
-  justify-content: space-around !important;
-} */
+
 @media only screen and (max-width: 850px) {
-  /* .navbar {
-    padding: 0;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-  } */
   .App-logos {
     position: absolute;
     top: 30px;

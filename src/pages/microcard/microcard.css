@@ -1,0 +1,24 @@
+.microcard {
+  margin: 10px 0 0 0;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0; */
+}
+
+.bold {
+  font-weight: 900;
+}
+.img-profile {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 25px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+.next {
+  color: #fe5475;
+  margin: 20px 0 0 -150px;
+}
