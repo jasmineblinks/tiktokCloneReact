@@ -8,7 +8,7 @@ function Followers() {
     <div className="followers-column">
       <div className="followers-section">
         <div className="home" />
-        <h4 className="bold red">For You</h4>
+        <h4 className="bold-content red">For You</h4>
       </div>
       <div className="followers-section">
         <div className="following" />

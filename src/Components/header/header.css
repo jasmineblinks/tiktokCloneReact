@@ -61,7 +61,7 @@ ul {
 }
 .App-logos {
   width: 120px;
-
+  margin-left: 170px;
   pointer-events: none;
   object-fit: contain;
 }

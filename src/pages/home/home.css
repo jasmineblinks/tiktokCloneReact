@@ -98,9 +98,13 @@ hr {
 }
 
 .suggested-box {
+  display: flex;
+  justify-content: end;
+  margin-top: 150px;
   min-width: 320px;
-  height: 600px;
-  padding: 10px;
+  height: 80px;
+  padding: 20px;
+  text-align: center;
 }
 
 .suggested {

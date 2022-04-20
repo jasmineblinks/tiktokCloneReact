@@ -6,7 +6,7 @@ import ProfileHeader from "../profileheader/ProfileHeader";
 const Upload = () => {
   return (
     <div>
-      <ProfileHeader />
+      {/* <ProfileHeader /> */}
       <UploadBanner />
     </div>
   );
